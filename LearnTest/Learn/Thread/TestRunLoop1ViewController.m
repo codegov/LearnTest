@@ -20,8 +20,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(testThreadAction) object:nil];
 
+    [thread start];
 }
+
+- (void)testThreadAction
+{
+    NSLog(@"[NSRunLoop currentRunLoop]=%@", [NSRunLoop currentRunLoop]);
+    
+    [self performSelector:@selector(doPerAction) withObject:nil afterDelay:0]; // 添加了CFRunLoopTimer定时源
+    
+    NSTimer *time = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(doPerAction) userInfo:nil repeats:NO];
+    [[NSRunLoop currentRunLoop] addTimer:time forMode:NSDefaultRunLoopMode]; // 添加了CFRunLoopTimer定时源
+
+    NSLog(@"[NSRunLoop currentRunLoop]=%@", [NSRunLoop currentRunLoop]);
+    
+    //重点：调用run()才会开启 do {} while(1);的循环，去维护线程的生命周期。
+    //如果不调用run()，线程生命随线程入口方法testThreadAction()执行完成而结束。
+    [[NSRunLoop currentRunLoop] run];
+}
+
+- (void)doPerAction
+{
+    NSLog(@"===doPerAction===");
+}
+
 
 - (void)finishURL
 {
