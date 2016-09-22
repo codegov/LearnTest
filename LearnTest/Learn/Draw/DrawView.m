@@ -22,7 +22,7 @@
 {
     [super drawRect:rect];
 //    for (int i = 100; i > 17; i--)
-    int i = 18;
+    int i = 2;
     {
         NSString *action = [NSString stringWithFormat:@"test%@", @(i).stringValue];
         SEL sel = NSSelectorFromString(action);
@@ -61,7 +61,7 @@
         CGPointMake(100.0, 60.0),
     };
     CGContextAddLines(context, addLines, sizeof(addLines)/sizeof(addLines[0]));
-    CGContextSetLineJoin(context, kCGLineJoinRound);
+    CGContextSetLineJoin(context, kCGLineJoinBevel);//设置图像上下文中线与线之间的连接处样式。 平角/圆角/直角
     CGContextStrokePath(context);
 }
 
