@@ -9,6 +9,7 @@
 #import "DrawRootViewController.h"
 #import "DrawView.h"
 #import "DrawCAShapeLayer.h"
+#import "DrawTestView.h"
 
 @interface DrawRootViewController ()
 
@@ -24,7 +25,11 @@
     DrawView *view = [[DrawView alloc] initWithFrame:CGRectMake(0.0, 64.0, self.view.frame.size.width, self.view.frame.size.height - 64.0)];
     view.backgroundColor = [UIColor grayColor];
     [self.view addSubview:view];
-
+    
+    DrawTestView *testView = [[DrawTestView alloc] initWithFrame:CGRectMake(10, 100, self.view.frame.size.width - 20, 200)];
+    testView.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:testView];
+    
 //    DrawCAShapeLayer *view = [[DrawCAShapeLayer alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)];
 //    [self.view addSubview:view];
 }

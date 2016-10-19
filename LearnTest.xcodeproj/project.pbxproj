@@ -156,6 +156,9 @@
 		821452E51D8922A100BB8956 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 821452E41D8922A100BB8956 /* Father.m */; };
 		821452E91D8922B700BB8956 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 821452E81D8922B700BB8956 /* Son.m */; };
 		821452EC1D89261400BB8956 /* NSObject+Sark.m in Sources */ = {isa = PBXBuildFile; fileRef = 821452EB1D89261400BB8956 /* NSObject+Sark.m */; };
+		8255CF3D1D9BC06900D6EDC8 /* HelloWorld.js in Resources */ = {isa = PBXBuildFile; fileRef = 8255CF3C1D9BC06900D6EDC8 /* HelloWorld.js */; };
+		825FAEDD1DAF1F0E0056E9D7 /* DrawTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 825FAEDC1DAF1F0E0056E9D7 /* DrawTestView.m */; };
+		825FAEE11DAF1F260056E9D7 /* DrawTestSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 825FAEE01DAF1F260056E9D7 /* DrawTestSubView.m */; };
 		82E787251D64028F0095D5B6 /* BST2And3Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E787241D64028F0095D5B6 /* BST2And3Node.m */; };
 		82E787281D6402E70095D5B6 /* BST2And3Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E787271D6402E70095D5B6 /* BST2And3Tree.m */; };
 		82E7872B1D642B2B0095D5B6 /* BSTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E7872A1D642B2B0095D5B6 /* BSTNode.m */; };
@@ -443,6 +446,11 @@
 		821452E81D8922B700BB8956 /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 		821452EA1D89261400BB8956 /* NSObject+Sark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sark.h"; sourceTree = "<group>"; };
 		821452EB1D89261400BB8956 /* NSObject+Sark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sark.m"; sourceTree = "<group>"; };
+		8255CF3C1D9BC06900D6EDC8 /* HelloWorld.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = HelloWorld.js; sourceTree = "<group>"; };
+		825FAEDB1DAF1F0E0056E9D7 /* DrawTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTestView.h; sourceTree = "<group>"; };
+		825FAEDC1DAF1F0E0056E9D7 /* DrawTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTestView.m; sourceTree = "<group>"; };
+		825FAEDF1DAF1F260056E9D7 /* DrawTestSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTestSubView.h; sourceTree = "<group>"; };
+		825FAEE01DAF1F260056E9D7 /* DrawTestSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTestSubView.m; sourceTree = "<group>"; };
 		82E787231D64028F0095D5B6 /* BST2And3Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST2And3Node.h; sourceTree = "<group>"; };
 		82E787241D64028F0095D5B6 /* BST2And3Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BST2And3Node.m; sourceTree = "<group>"; };
 		82E787261D6402E70095D5B6 /* BST2And3Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST2And3Tree.h; sourceTree = "<group>"; };
@@ -639,6 +647,7 @@
 		5155C6B319F0AF13002F4CC8 /* Learn */ = {
 			isa = PBXGroup;
 			children = (
+				8255CF3A1D9BC01000D6EDC8 /* Node */,
 				51ABC6011B83739700E503B1 /* Draw */,
 				515052CF1B70A52500814BB3 /* GIF */,
 				51B816F11B7AE1670003D9B3 /* Leetcode */,
@@ -887,6 +896,10 @@
 				51ABC6061B8373FE00E503B1 /* DrawView.m */,
 				820B0E471CE581ED00E25CE9 /* DrawCAShapeLayer.h */,
 				820B0E481CE581ED00E25CE9 /* DrawCAShapeLayer.m */,
+				825FAEDB1DAF1F0E0056E9D7 /* DrawTestView.h */,
+				825FAEDC1DAF1F0E0056E9D7 /* DrawTestView.m */,
+				825FAEDF1DAF1F260056E9D7 /* DrawTestSubView.h */,
+				825FAEE01DAF1F260056E9D7 /* DrawTestSubView.m */,
 			);
 			path = Draw;
 			sourceTree = "<group>";
@@ -1116,6 +1129,14 @@
 			path = GCD;
 			sourceTree = "<group>";
 		};
+		8255CF3A1D9BC01000D6EDC8 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				8255CF3C1D9BC06900D6EDC8 /* HelloWorld.js */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
 		82E7871D1D6401A30095D5B6 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
@@ -1237,6 +1258,7 @@
 				515052EB1B70A52500814BB3 /* G006.gif in Resources */,
 				515052F21B70A52500814BB3 /* G013.gif in Resources */,
 				51DE419A1ADDFF4800AB9A4D /* Info.plist in Resources */,
+				8255CF3D1D9BC06900D6EDC8 /* HelloWorld.js in Resources */,
 				518BF55D1ABA6BC800130F40 /* LearnTest.plist in Resources */,
 				5155C69E19F0AC6D002F4CC8 /* LaunchScreen.xib in Resources */,
 				5148EF9F1ADD13DA002B052C /* MB_Gothic_Spell.ttf in Resources */,
@@ -1329,6 +1351,7 @@
 				51B0C9111B01E4CE00A0B524 /* CustomURLCache.m in Sources */,
 				51B70E2A1B141DC300430030 /* SocketChatViewController.m in Sources */,
 				518BF5601ABA728200130F40 /* KeychainItemWrapper.m in Sources */,
+				825FAEE11DAF1F260056E9D7 /* DrawTestSubView.m in Sources */,
 				515052FE1B70A55100814BB3 /* GIFViewController.m in Sources */,
 				51ABC6041B8373B600E503B1 /* DrawRootViewController.m in Sources */,
 				51A676D01B1EE946009FF883 /* IMLoginParam.m in Sources */,
@@ -1368,6 +1391,7 @@
 				51A676BC1B1EE946009FF883 /* IMResponse.m in Sources */,
 				51D6341F1A12F0BF007A1059 /* TestLockViewController.m in Sources */,
 				51B0BB8219FE79B7003397A8 /* TestRunLoop3ViewController.m in Sources */,
+				825FAEDD1DAF1F0E0056E9D7 /* DrawTestView.m in Sources */,
 				51B5F4341A15B199004EAAFB /* TestThread2ViewController.m in Sources */,
 				82E787281D6402E70095D5B6 /* BST2And3Tree.m in Sources */,
 				51A676D31B1EE946009FF883 /* IMChatTask.m in Sources */,
