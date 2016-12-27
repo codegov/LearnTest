@@ -58,6 +58,7 @@
         [self.dataArray addObject:@{@"title": @"授权账户", @"class": @"AccountViewController"}];
         [self.dataArray addObject:@{@"title": @"leetcode", @"class": @"LeetcodeViewController"}];
         [self.dataArray addObject:@{@"title": @"绘制学习", @"class": @"DrawRootViewController"}];
+        [self.dataArray addObject:@{@"title": @"OpenGL学习", @"class": @"LearnGLRootViewController"}];
         
 //        NSLog(@"****ViewController*执行*init");
         

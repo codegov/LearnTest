@@ -156,9 +156,31 @@
 		821452E51D8922A100BB8956 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 821452E41D8922A100BB8956 /* Father.m */; };
 		821452E91D8922B700BB8956 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 821452E81D8922B700BB8956 /* Son.m */; };
 		821452EC1D89261400BB8956 /* NSObject+Sark.m in Sources */ = {isa = PBXBuildFile; fileRef = 821452EB1D89261400BB8956 /* NSObject+Sark.m */; };
+		8244E14A1E095BB1004EF6F1 /* ShaderLearn.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8244E1491E095BB1004EF6F1 /* ShaderLearn.glsl */; };
+		8244E1511E0A55B2004EF6F1 /* DrawViewCoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 8244E1501E0A55B2004EF6F1 /* DrawViewCoreGraphics.m */; };
 		8255CF3D1D9BC06900D6EDC8 /* HelloWorld.js in Resources */ = {isa = PBXBuildFile; fileRef = 8255CF3C1D9BC06900D6EDC8 /* HelloWorld.js */; };
 		825FAEDD1DAF1F0E0056E9D7 /* DrawTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 825FAEDC1DAF1F0E0056E9D7 /* DrawTestView.m */; };
 		825FAEE11DAF1F260056E9D7 /* DrawTestSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 825FAEE01DAF1F260056E9D7 /* DrawTestSubView.m */; };
+		8265FA9A1E0CCCDE00ED9E17 /* LearnGLTest31ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8265FA991E0CCCDE00ED9E17 /* LearnGLTest31ViewController.m */; };
+		8265FA9E1E0CCD1300ED9E17 /* Test31ShaderFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8265FA9C1E0CCD1300ED9E17 /* Test31ShaderFragment.glsl */; };
+		8265FA9F1E0CCD1300ED9E17 /* Test31ShaderVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8265FA9D1E0CCD1300ED9E17 /* Test31ShaderVertex.glsl */; };
+		8265FAA11E0D095800ED9E17 /* Radial.png in Resources */ = {isa = PBXBuildFile; fileRef = 8265FAA01E0D095800ED9E17 /* Radial.png */; };
+		8280CD2C1E0A77B200816EE5 /* LearnGLTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8280CD211E0A77B200816EE5 /* LearnGLTest1ViewController.m */; };
+		8280CD2D1E0A77B200816EE5 /* LearnGLTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8280CD241E0A77B200816EE5 /* LearnGLTest2ViewController.m */; };
+		8280CD2E1E0A77B200816EE5 /* Test2ShaderFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8280CD251E0A77B200816EE5 /* Test2ShaderFragment.glsl */; };
+		8280CD2F1E0A77B200816EE5 /* Test2ShaderVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8280CD261E0A77B200816EE5 /* Test2ShaderVertex.glsl */; };
+		8280CD301E0A77B200816EE5 /* LearnGLTest3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8280CD291E0A77B200816EE5 /* LearnGLTest3ViewController.m */; };
+		8280CD311E0A77B200816EE5 /* Test3ShaderFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8280CD2A1E0A77B200816EE5 /* Test3ShaderFragment.glsl */; };
+		8280CD321E0A77B200816EE5 /* Test3ShaderVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8280CD2B1E0A77B200816EE5 /* Test3ShaderVertex.glsl */; };
+		8280CD351E0B7BA500816EE5 /* maitian_jingse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8280CD341E0B7BA500816EE5 /* maitian_jingse.jpg */; };
+		8280CD371E0B7CA400816EE5 /* maitian_jingse_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8280CD361E0B7CA400816EE5 /* maitian_jingse_9.jpg */; };
+		82818D0F1E10BC1F00040EFD /* Test360GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82818D0E1E10BC1F00040EFD /* Test360GLViewController.m */; };
+		8285E8BE1DF6A75E006CE017 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8285E8BD1DF6A75E006CE017 /* OpenGLES.framework */; };
+		8285E8C11DF6ABE7006CE017 /* LearnGLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8285E8C01DF6ABE7006CE017 /* LearnGLRootViewController.m */; };
+		82A903941E07C432008AB418 /* ShaderOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A903931E07C432008AB418 /* ShaderOperations.m */; };
+		82BD616D1E0BEF40008F507F /* Test3TouchFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 82BD616B1E0BEF40008F507F /* Test3TouchFragment.glsl */; };
+		82BD616E1E0BEF40008F507F /* Test3TouchVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 82BD616C1E0BEF40008F507F /* Test3TouchVertex.glsl */; };
+		82BD61721E0BF9CB008F507F /* Test3TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BD61711E0BF9CB008F507F /* Test3TouchView.m */; };
 		82E787251D64028F0095D5B6 /* BST2And3Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E787241D64028F0095D5B6 /* BST2And3Node.m */; };
 		82E787281D6402E70095D5B6 /* BST2And3Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E787271D6402E70095D5B6 /* BST2And3Tree.m */; };
 		82E7872B1D642B2B0095D5B6 /* BSTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E7872A1D642B2B0095D5B6 /* BSTNode.m */; };
@@ -446,11 +468,42 @@
 		821452E81D8922B700BB8956 /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 		821452EA1D89261400BB8956 /* NSObject+Sark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sark.h"; sourceTree = "<group>"; };
 		821452EB1D89261400BB8956 /* NSObject+Sark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sark.m"; sourceTree = "<group>"; };
+		8244E1491E095BB1004EF6F1 /* ShaderLearn.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShaderLearn.glsl; sourceTree = "<group>"; };
+		8244E14F1E0A55B2004EF6F1 /* DrawViewCoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewCoreGraphics.h; sourceTree = "<group>"; };
+		8244E1501E0A55B2004EF6F1 /* DrawViewCoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewCoreGraphics.m; sourceTree = "<group>"; };
 		8255CF3C1D9BC06900D6EDC8 /* HelloWorld.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = HelloWorld.js; sourceTree = "<group>"; };
 		825FAEDB1DAF1F0E0056E9D7 /* DrawTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTestView.h; sourceTree = "<group>"; };
 		825FAEDC1DAF1F0E0056E9D7 /* DrawTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTestView.m; sourceTree = "<group>"; };
 		825FAEDF1DAF1F260056E9D7 /* DrawTestSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTestSubView.h; sourceTree = "<group>"; };
 		825FAEE01DAF1F260056E9D7 /* DrawTestSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTestSubView.m; sourceTree = "<group>"; };
+		8265FA981E0CCCDE00ED9E17 /* LearnGLTest31ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnGLTest31ViewController.h; sourceTree = "<group>"; };
+		8265FA991E0CCCDE00ED9E17 /* LearnGLTest31ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnGLTest31ViewController.m; sourceTree = "<group>"; };
+		8265FA9C1E0CCD1300ED9E17 /* Test31ShaderFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test31ShaderFragment.glsl; sourceTree = "<group>"; };
+		8265FA9D1E0CCD1300ED9E17 /* Test31ShaderVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test31ShaderVertex.glsl; sourceTree = "<group>"; };
+		8265FAA01E0D095800ED9E17 /* Radial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radial.png; sourceTree = "<group>"; };
+		8280CD201E0A77B200816EE5 /* LearnGLTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnGLTest1ViewController.h; sourceTree = "<group>"; };
+		8280CD211E0A77B200816EE5 /* LearnGLTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnGLTest1ViewController.m; sourceTree = "<group>"; };
+		8280CD231E0A77B200816EE5 /* LearnGLTest2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnGLTest2ViewController.h; sourceTree = "<group>"; };
+		8280CD241E0A77B200816EE5 /* LearnGLTest2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnGLTest2ViewController.m; sourceTree = "<group>"; };
+		8280CD251E0A77B200816EE5 /* Test2ShaderFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test2ShaderFragment.glsl; sourceTree = "<group>"; };
+		8280CD261E0A77B200816EE5 /* Test2ShaderVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test2ShaderVertex.glsl; sourceTree = "<group>"; };
+		8280CD281E0A77B200816EE5 /* LearnGLTest3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnGLTest3ViewController.h; sourceTree = "<group>"; };
+		8280CD291E0A77B200816EE5 /* LearnGLTest3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnGLTest3ViewController.m; sourceTree = "<group>"; };
+		8280CD2A1E0A77B200816EE5 /* Test3ShaderFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test3ShaderFragment.glsl; sourceTree = "<group>"; };
+		8280CD2B1E0A77B200816EE5 /* Test3ShaderVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test3ShaderVertex.glsl; sourceTree = "<group>"; };
+		8280CD341E0B7BA500816EE5 /* maitian_jingse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maitian_jingse.jpg; sourceTree = "<group>"; };
+		8280CD361E0B7CA400816EE5 /* maitian_jingse_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maitian_jingse_9.jpg; sourceTree = "<group>"; };
+		82818D0D1E10BC1F00040EFD /* Test360GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test360GLViewController.h; sourceTree = "<group>"; };
+		82818D0E1E10BC1F00040EFD /* Test360GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test360GLViewController.m; sourceTree = "<group>"; };
+		8285E8BD1DF6A75E006CE017 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8285E8BF1DF6ABE7006CE017 /* LearnGLRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnGLRootViewController.h; sourceTree = "<group>"; };
+		8285E8C01DF6ABE7006CE017 /* LearnGLRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnGLRootViewController.m; sourceTree = "<group>"; };
+		82A903921E07C432008AB418 /* ShaderOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderOperations.h; sourceTree = "<group>"; };
+		82A903931E07C432008AB418 /* ShaderOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderOperations.m; sourceTree = "<group>"; };
+		82BD616B1E0BEF40008F507F /* Test3TouchFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test3TouchFragment.glsl; sourceTree = "<group>"; };
+		82BD616C1E0BEF40008F507F /* Test3TouchVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test3TouchVertex.glsl; sourceTree = "<group>"; };
+		82BD61701E0BF9CB008F507F /* Test3TouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test3TouchView.h; sourceTree = "<group>"; };
+		82BD61711E0BF9CB008F507F /* Test3TouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test3TouchView.m; sourceTree = "<group>"; };
 		82E787231D64028F0095D5B6 /* BST2And3Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST2And3Node.h; sourceTree = "<group>"; };
 		82E787241D64028F0095D5B6 /* BST2And3Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BST2And3Node.m; sourceTree = "<group>"; };
 		82E787261D6402E70095D5B6 /* BST2And3Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST2And3Tree.h; sourceTree = "<group>"; };
@@ -476,6 +529,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8285E8BE1DF6A75E006CE017 /* OpenGLES.framework in Frameworks */,
 				51C8ADE01B88BB6600E8506A /* CoreAudioKit.framework in Frameworks */,
 				518AA4F71B7995750032C966 /* iAd.framework in Frameworks */,
 				518AA4F51B7993F40032C966 /* AdSupport.framework in Frameworks */,
@@ -647,6 +701,7 @@
 		5155C6B319F0AF13002F4CC8 /* Learn */ = {
 			isa = PBXGroup;
 			children = (
+				8285E8BB1DF6A556006CE017 /* OpenGL */,
 				8255CF3A1D9BC01000D6EDC8 /* Node */,
 				51ABC6011B83739700E503B1 /* Draw */,
 				515052CF1B70A52500814BB3 /* GIF */,
@@ -900,6 +955,8 @@
 				825FAEDC1DAF1F0E0056E9D7 /* DrawTestView.m */,
 				825FAEDF1DAF1F260056E9D7 /* DrawTestSubView.h */,
 				825FAEE01DAF1F260056E9D7 /* DrawTestSubView.m */,
+				8244E14F1E0A55B2004EF6F1 /* DrawViewCoreGraphics.h */,
+				8244E1501E0A55B2004EF6F1 /* DrawViewCoreGraphics.m */,
 			);
 			path = Draw;
 			sourceTree = "<group>";
@@ -923,6 +980,7 @@
 		51ABC6A71B09852600155BA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8285E8BD1DF6A75E006CE017 /* OpenGLES.framework */,
 				51C8ADDF1B88BB6600E8506A /* CoreAudioKit.framework */,
 				518AA4F61B7995750032C966 /* iAd.framework */,
 				518AA4F41B7993F40032C966 /* AdSupport.framework */,
@@ -1105,6 +1163,8 @@
 		51D6AB2A1A1C21D000929A74 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8280CD361E0B7CA400816EE5 /* maitian_jingse_9.jpg */,
+				8280CD341E0B7BA500816EE5 /* maitian_jingse.jpg */,
 				51E403921B8476DB001ECA5B /* apple.png */,
 				5148EF991ADD0F85002B052C /* MB_Gothic_Spell.ttf */,
 				5148EFA41ADD1425002B052C /* WawaSC-Regular.otf */,
@@ -1135,6 +1195,72 @@
 				8255CF3C1D9BC06900D6EDC8 /* HelloWorld.js */,
 			);
 			path = Node;
+			sourceTree = "<group>";
+		};
+		8280CD1F1E0A77B200816EE5 /* Test1 */ = {
+			isa = PBXGroup;
+			children = (
+				8280CD201E0A77B200816EE5 /* LearnGLTest1ViewController.h */,
+				8280CD211E0A77B200816EE5 /* LearnGLTest1ViewController.m */,
+			);
+			path = Test1;
+			sourceTree = "<group>";
+		};
+		8280CD221E0A77B200816EE5 /* Test2 */ = {
+			isa = PBXGroup;
+			children = (
+				8280CD231E0A77B200816EE5 /* LearnGLTest2ViewController.h */,
+				8280CD241E0A77B200816EE5 /* LearnGLTest2ViewController.m */,
+				8280CD251E0A77B200816EE5 /* Test2ShaderFragment.glsl */,
+				8280CD261E0A77B200816EE5 /* Test2ShaderVertex.glsl */,
+			);
+			path = Test2;
+			sourceTree = "<group>";
+		};
+		8280CD271E0A77B200816EE5 /* Test3 */ = {
+			isa = PBXGroup;
+			children = (
+				8280CD281E0A77B200816EE5 /* LearnGLTest3ViewController.h */,
+				8280CD291E0A77B200816EE5 /* LearnGLTest3ViewController.m */,
+				8265FA981E0CCCDE00ED9E17 /* LearnGLTest31ViewController.h */,
+				8265FA991E0CCCDE00ED9E17 /* LearnGLTest31ViewController.m */,
+				82BD61701E0BF9CB008F507F /* Test3TouchView.h */,
+				82BD61711E0BF9CB008F507F /* Test3TouchView.m */,
+				8280CD2A1E0A77B200816EE5 /* Test3ShaderFragment.glsl */,
+				8280CD2B1E0A77B200816EE5 /* Test3ShaderVertex.glsl */,
+				82BD616B1E0BEF40008F507F /* Test3TouchFragment.glsl */,
+				82BD616C1E0BEF40008F507F /* Test3TouchVertex.glsl */,
+				8265FA9C1E0CCD1300ED9E17 /* Test31ShaderFragment.glsl */,
+				8265FA9D1E0CCD1300ED9E17 /* Test31ShaderVertex.glsl */,
+				8265FAA01E0D095800ED9E17 /* Radial.png */,
+			);
+			path = Test3;
+			sourceTree = "<group>";
+		};
+		82818D0B1E10BBA800040EFD /* Test360Player */ = {
+			isa = PBXGroup;
+			children = (
+				82818D0D1E10BC1F00040EFD /* Test360GLViewController.h */,
+				82818D0E1E10BC1F00040EFD /* Test360GLViewController.m */,
+			);
+			name = Test360Player;
+			path = LearnTest/Learn/OpenGL/Test360Player;
+			sourceTree = SOURCE_ROOT;
+		};
+		8285E8BB1DF6A556006CE017 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				8285E8BF1DF6ABE7006CE017 /* LearnGLRootViewController.h */,
+				8285E8C01DF6ABE7006CE017 /* LearnGLRootViewController.m */,
+				8244E1491E095BB1004EF6F1 /* ShaderLearn.glsl */,
+				82A903921E07C432008AB418 /* ShaderOperations.h */,
+				82A903931E07C432008AB418 /* ShaderOperations.m */,
+				8280CD1F1E0A77B200816EE5 /* Test1 */,
+				8280CD221E0A77B200816EE5 /* Test2 */,
+				8280CD271E0A77B200816EE5 /* Test3 */,
+				82818D0B1E10BBA800040EFD /* Test360Player */,
+			);
+			path = OpenGL;
 			sourceTree = "<group>";
 		};
 		82E7871D1D6401A30095D5B6 /* Tree */ = {
@@ -1200,7 +1326,7 @@
 				TargetAttributes = {
 					5155C68919F0AC6D002F4CC8 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = 5E25KMK5KR;
+						DevelopmentTeam = TU843SMT36;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -1257,7 +1383,11 @@
 			files = (
 				515052EB1B70A52500814BB3 /* G006.gif in Resources */,
 				515052F21B70A52500814BB3 /* G013.gif in Resources */,
+				8280CD311E0A77B200816EE5 /* Test3ShaderFragment.glsl in Resources */,
 				51DE419A1ADDFF4800AB9A4D /* Info.plist in Resources */,
+				8244E14A1E095BB1004EF6F1 /* ShaderLearn.glsl in Resources */,
+				8280CD371E0B7CA400816EE5 /* maitian_jingse_9.jpg in Resources */,
+				82BD616D1E0BEF40008F507F /* Test3TouchFragment.glsl in Resources */,
 				8255CF3D1D9BC06900D6EDC8 /* HelloWorld.js in Resources */,
 				518BF55D1ABA6BC800130F40 /* LearnTest.plist in Resources */,
 				5155C69E19F0AC6D002F4CC8 /* LaunchScreen.xib in Resources */,
@@ -1268,24 +1398,32 @@
 				515052F41B70A52500814BB3 /* G015.gif in Resources */,
 				515052E81B70A52500814BB3 /* G003.gif in Resources */,
 				515052ED1B70A52500814BB3 /* G008.gif in Resources */,
+				82BD616E1E0BEF40008F507F /* Test3TouchVertex.glsl in Resources */,
 				51D6AB2C1A1C21D000929A74 /* image.png in Resources */,
+				8280CD351E0B7BA500816EE5 /* maitian_jingse.jpg in Resources */,
 				515052F81B70A52500814BB3 /* G019.gif in Resources */,
 				515052F91B70A52500814BB3 /* G020.gif in Resources */,
 				515052EE1B70A52500814BB3 /* G009.gif in Resources */,
 				515052F51B70A52500814BB3 /* G016.gif in Resources */,
 				515052EF1B70A52500814BB3 /* G010.gif in Resources */,
 				515052F31B70A52500814BB3 /* G014.gif in Resources */,
+				8265FA9E1E0CCD1300ED9E17 /* Test31ShaderFragment.glsl in Resources */,
 				517F79D51AE4E60E00563F82 /* 支持64位.rtfd in Resources */,
 				515052E91B70A52500814BB3 /* G004.gif in Resources */,
 				515052E71B70A52500814BB3 /* G002.gif in Resources */,
 				51E403931B8476DB001ECA5B /* apple.png in Resources */,
 				515052FA1B70A52500814BB3 /* G021.gif in Resources */,
+				8265FA9F1E0CCD1300ED9E17 /* Test31ShaderVertex.glsl in Resources */,
 				515052E61B70A52500814BB3 /* G001.gif in Resources */,
 				511080DA1B00A3AC00D54B97 /* GKBlueViewController.xib in Resources */,
 				51A676B71B1EE946009FF883 /* Chat.plist in Resources */,
 				515052F61B70A52500814BB3 /* G017.gif in Resources */,
+				8280CD2E1E0A77B200816EE5 /* Test2ShaderFragment.glsl in Resources */,
+				8280CD321E0A77B200816EE5 /* Test3ShaderVertex.glsl in Resources */,
 				515052EA1B70A52500814BB3 /* G005.gif in Resources */,
+				8265FAA11E0D095800ED9E17 /* Radial.png in Resources */,
 				515052F71B70A52500814BB3 /* G018.gif in Resources */,
+				8280CD2F1E0A77B200816EE5 /* Test2ShaderVertex.glsl in Resources */,
 				5148EFA21ADD1425002B052C /* WawaSC-Regular.otf in Resources */,
 				51B0C9071B01E4C400A0B524 /* SVProgressHUD.bundle in Resources */,
 				515052EC1B70A52500814BB3 /* G007.gif in Resources */,
@@ -1317,6 +1455,7 @@
 				51B2EE181A19C21D00EC27A0 /* TestCoreAnimation1ViewController.m in Sources */,
 				5149FA5B19FA217C00326054 /* TestRunLoop1ViewController.m in Sources */,
 				513501E61A1D89E900BE4247 /* TestGcd2ViewController.m in Sources */,
+				82818D0F1E10BC1F00040EFD /* Test360GLViewController.m in Sources */,
 				514C96501A2C1C48009E3FA4 /* TestGcd3ViewController.m in Sources */,
 				51ABC6071B8373FE00E503B1 /* DrawView.m in Sources */,
 				5113CB3A1A5BC00A002E0B2C /* HashFun.m in Sources */,
@@ -1336,11 +1475,13 @@
 				51A676C91B1EE946009FF883 /* IMChat.m in Sources */,
 				82F23EF11CBCDAED001189D9 /* UIFont+TestFont.m in Sources */,
 				5113CB431A5BC103002E0B2C /* Bloom.mm in Sources */,
+				8280CD2D1E0A77B200816EE5 /* LearnGLTest2ViewController.m in Sources */,
 				82E7872E1D642B3C0095D5B6 /* BSTTree.m in Sources */,
 				51A438101A08FC8000A13229 /* Linearlist.m in Sources */,
 				5197CAA31B003BE200293D38 /* AutoImagePickerViewController.m in Sources */,
 				51B0C9191B01E50400A0B524 /* Reachability.m in Sources */,
 				51A676D11B1EE946009FF883 /* IMChatSynTask.m in Sources */,
+				8265FA9A1E0CCCDE00ED9E17 /* LearnGLTest31ViewController.m in Sources */,
 				51B70E2D1B141DE000430030 /* SocketMessageViewController.m in Sources */,
 				51B740471B789F3D00BCEF43 /* SvGifView.m in Sources */,
 				51A676661B1EE912009FF883 /* GCDAsyncSocket.m in Sources */,
@@ -1348,10 +1489,12 @@
 				511080D81B00A2E800D54B97 /* GKBlueViewController.m in Sources */,
 				51B4FFC81ABA54E700C69F98 /* KeyChainRootViewController.m in Sources */,
 				51B0C9061B01E4C400A0B524 /* MBProgressHUD.m in Sources */,
+				8285E8C11DF6ABE7006CE017 /* LearnGLRootViewController.m in Sources */,
 				51B0C9111B01E4CE00A0B524 /* CustomURLCache.m in Sources */,
 				51B70E2A1B141DC300430030 /* SocketChatViewController.m in Sources */,
 				518BF5601ABA728200130F40 /* KeychainItemWrapper.m in Sources */,
 				825FAEE11DAF1F260056E9D7 /* DrawTestSubView.m in Sources */,
+				8280CD2C1E0A77B200816EE5 /* LearnGLTest1ViewController.m in Sources */,
 				515052FE1B70A55100814BB3 /* GIFViewController.m in Sources */,
 				51ABC6041B8373B600E503B1 /* DrawRootViewController.m in Sources */,
 				51A676D01B1EE946009FF883 /* IMLoginParam.m in Sources */,
@@ -1391,6 +1534,7 @@
 				51A676BC1B1EE946009FF883 /* IMResponse.m in Sources */,
 				51D6341F1A12F0BF007A1059 /* TestLockViewController.m in Sources */,
 				51B0BB8219FE79B7003397A8 /* TestRunLoop3ViewController.m in Sources */,
+				82A903941E07C432008AB418 /* ShaderOperations.m in Sources */,
 				825FAEDD1DAF1F0E0056E9D7 /* DrawTestView.m in Sources */,
 				51B5F4341A15B199004EAAFB /* TestThread2ViewController.m in Sources */,
 				82E787281D6402E70095D5B6 /* BST2And3Tree.m in Sources */,
@@ -1400,8 +1544,10 @@
 				5148EFA01ADD141C002B052C /* ViewController.m in Sources */,
 				82E787251D64028F0095D5B6 /* BST2And3Node.m in Sources */,
 				514C96531A2C3795009E3FA4 /* TestThread3ViewController.m in Sources */,
+				82BD61721E0BF9CB008F507F /* Test3TouchView.m in Sources */,
 				518EBE841A416B8100085AC7 /* RuntimeRootViewController.m in Sources */,
 				821452E91D8922B700BB8956 /* Son.m in Sources */,
+				8280CD301E0A77B200816EE5 /* LearnGLTest3ViewController.m in Sources */,
 				51B816F51B7AE17B0003D9B3 /* LeetcodeViewController.m in Sources */,
 				5113CB401A5BC0CF002E0B2C /* HashFunB.m in Sources */,
 				51ABC69D1B0982C100155BA0 /* SocketRootViewController.m in Sources */,
@@ -1410,6 +1556,7 @@
 				51A676CB1B1EE946009FF883 /* IMGroupMember.m in Sources */,
 				51A676D41B1EE946009FF883 /* IMLoginTask.m in Sources */,
 				82E7872B1D642B2B0095D5B6 /* BSTNode.m in Sources */,
+				8244E1511E0A55B2004EF6F1 /* DrawViewCoreGraphics.m in Sources */,
 				51ABC6AD1B0985A600155BA0 /* DLFontManager.m in Sources */,
 				5149FA6019FA219500326054 /* BlockRootViewController.m in Sources */,
 				820B0E491CE581ED00E25CE9 /* DrawCAShapeLayer.m in Sources */,
@@ -1532,6 +1679,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TU843SMT36;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LearnTest/Learn-Prefix.pch";
 				IBC_FLATTEN_NIBS = YES;
@@ -1542,6 +1690,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LearnTest/Learn/Socket/src/ThirdPart/protobuf",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenwen.D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/runtime/**";
@@ -1556,6 +1705,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TU843SMT36;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LearnTest/Learn-Prefix.pch";
 				IBC_FLATTEN_NIBS = YES;
@@ -1566,6 +1716,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LearnTest/Learn/Socket/src/ThirdPart/protobuf",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenwen.D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/runtime/**";
