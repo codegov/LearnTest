@@ -11,6 +11,17 @@
 #import "ShaderOperations.h"
 #import "Test3TouchView.h"
 
+typedef NS_ENUM(NSUInteger, GPUImageRotationMode) {
+    LGPUImageNoRotation,
+    LGPUImageRotateLeft,
+    LGPUImageRotateRight,
+    LGPUImageFlipVertical,
+    LGPUImageFlipHorizonal,
+    LGPUImageRotateRightFlipVertical,
+    LGPUImageRotateRightFlipHorizontal,
+    LGPUImageRotate180
+};
+
 @interface LearnGLTest31ViewController ()<Test3TouchViewDelegate>
 {
     EAGLContext *_glContext;   // 上下文
@@ -42,7 +53,9 @@
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"清空" style:UIBarButtonItemStylePlain target:self action:@selector(clearContext)];
     self.navigationItem.rightBarButtonItem = item;
     
-    Test3TouchView *view = [[Test3TouchView alloc] initWithFrame:self.view.bounds];
+    UIImage *image = [UIImage imageNamed:@"image"];
+    float x = (self.view.frame.size.width - image.size.width)/2.0;
+    Test3TouchView *view = [[Test3TouchView alloc] initWithFrame:CGRectMake(x, 74, image.size.width, image.size.height)];
     view.delegate = self;
     [self.view addSubview:view];
     
@@ -83,11 +96,11 @@
     [self setupBlendMode];
     [self setupTexture];   // 纹理
     
-    UIImage *image = [UIImage imageNamed:@"Radial"];
+    UIImage *image = [UIImage imageNamed:@"image"];//[UIImage imageNamed:@"Radial"];
     [self setupImageToTexture:image];    // 图片转纹理
 //    [self setupImageToTexture_pbo:image];
-//    [self setupRenderTexture];// 渲染纹理像素
-//    [_glContext presentRenderbuffer:GL_RENDERBUFFER];
+    [self setupRenderTexture];// 渲染纹理像素
+    [_glContext presentRenderbuffer:GL_RENDERBUFFER];
 }
 
 - (void)setupGLContext
@@ -100,7 +113,10 @@
 {
     _glLayer = [CAEAGLLayer layer];
 //    _glLayer.frame = CGRectMake(10, 74, self.view.frame.size.width - 20, 200);
-    _glLayer.frame = self.view.frame;
+//    _glLayer.frame = self.view.frame;
+    UIImage *image = [UIImage imageNamed:@"image"];
+    float x = (self.view.frame.size.width - image.size.width)/2.0;
+    _glLayer.frame = CGRectMake(x, 74, image.size.width, image.size.height);
     _glLayer.opaque = YES;
     // 描绘属性：这里不维持渲染内容
     // kEAGLDrawablePropertyRetainedBacking:若为YES，则使用glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)计算得到的最终结果颜色的透明度会考虑目标颜色的透明度值。
@@ -359,12 +375,14 @@
 
 - (void)setupRenderUsingIndexVBO
 {
-    const GLfloat texCoords[] = {
-        0, 0,//左下
-        1, 0,//右下
-        0, 1,//左上
-        1, 1,//右上
-    };
+//    const GLfloat texCoords[] = {
+//        0, 0,//左下
+//        1, 0,//右下
+//        0, 1,//左上
+//        1, 1,//右上
+//    };
+    
+    const GLfloat *texCoords = [[self class] textureCoordinatesForRotation:LGPUImageRotateLeft] ;
     
     const GLfloat vertices[] = {
         -1, -1, 0,   //左下
@@ -445,8 +463,8 @@
 - (void)setupRenderUsingIndexVBOWithTouchPoints:(NSArray *)touchPoints
 {
     CGFloat lineWidth = 5.0;
-    CGFloat width  = self.view.frame.size.width;
-    CGFloat height = self.view.frame.size.height;
+    CGFloat width  = _glLayer.frame.size.width;
+    CGFloat height = _glLayer.frame.size.height;
     for (id rawPoint in touchPoints)
     {
         CGPoint point = [rawPoint CGPointValue];
@@ -572,6 +590,118 @@
         [EAGLContext setCurrentContext:nil];
     }
 }
+
++ (const GLfloat *)textureCoordinatesForRotation:(GPUImageRotationMode)rotationMode;
+{
+    /**
+     c  d
+     a  b
+     */
+    static const GLfloat noRotationTextureCoordinates[] = {
+        0.0f, 0.0f,//左下 a
+        1.0f, 0.0f,//右下 b
+        0.0f, 1.0f,//左上 c
+        1.0f, 1.0f,//右上 d
+    };
+    
+    // 从坐标原点比划旋转，即从屏幕底部比划旋转
+    /**
+     c  d       a  c
+            >>
+     a  b       b  d
+     */
+    static const GLfloat rotateLeftTextureCoordinates[] = {
+        1.0f, 0.0f,// b
+        1.0f, 1.0f,// d
+        0.0f, 0.0f,// a
+        0.0f, 1.0f,// c
+    };
+    
+    /**
+     c  d       d  b
+            >>
+     a  b       c  a
+     */
+    static const GLfloat rotateRightTextureCoordinates[] = {
+        0.0f, 1.0f,// c
+        0.0f, 0.0f,// a
+        1.0f, 1.0f,// d
+        1.0f, 0.0f,// b
+    };
+    
+    /**
+     c  d       a  b
+            >>
+     a  b       c  d
+     */
+    static const GLfloat verticalFlipTextureCoordinates[] = {
+        0.0f, 1.0f,// c
+        1.0f, 1.0f,// d
+        0.0f, 0.0f,// a
+        1.0f, 0.0f,// b
+    };
+    
+    /**
+     c  d       d  c
+            >>
+     a  b       b  a
+     */
+    static const GLfloat horizontalFlipTextureCoordinates[] = {
+        1.0f, 0.0f,// b
+        0.0f, 0.0f,// a
+        1.0f, 1.0f,// d
+        0.0f, 1.0f,// c
+    };
+    
+    /**
+     c  d       b  d
+            >>
+     a  b       a  c
+     */
+    static const GLfloat rotateRightVerticalFlipTextureCoordinates[] = {
+        0.0f, 0.0f,// a
+        0.0f, 1.0f,// c
+        1.0f, 0.0f,// b
+        1.0f, 1.0f,// d
+    };
+    
+    /**
+     c  d       c  a
+            >>
+     a  b       d  b
+     */
+    static const GLfloat rotateRightHorizontalFlipTextureCoordinates[] = {
+        1.0f, 1.0f,// d
+        1.0f, 0.0f,// b
+        0.0f, 1.0f,// c
+        0.0f, 0.0f,// a
+    };
+    
+    /**
+     c  d       b  a
+            >>
+     a  b       d  c
+     */
+    static const GLfloat rotate180TextureCoordinates[] = {
+        1.0f, 1.0f,// d
+        0.0f, 1.0f,// c
+        1.0f, 0.0f,// b
+        0.0f, 0.0f,// a
+    };
+    
+    switch(rotationMode)
+    {
+        case LGPUImageNoRotation: return noRotationTextureCoordinates;
+        case LGPUImageRotateLeft: return rotateLeftTextureCoordinates;
+        case LGPUImageRotateRight: return rotateRightTextureCoordinates;
+        case LGPUImageFlipVertical: return verticalFlipTextureCoordinates;
+        case LGPUImageFlipHorizonal: return horizontalFlipTextureCoordinates;
+        case LGPUImageRotateRightFlipVertical: return rotateRightVerticalFlipTextureCoordinates;
+        case LGPUImageRotateRightFlipHorizontal: return rotateRightHorizontalFlipTextureCoordinates;
+        case LGPUImageRotate180: return rotate180TextureCoordinates;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {

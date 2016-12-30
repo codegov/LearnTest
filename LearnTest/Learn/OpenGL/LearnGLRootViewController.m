@@ -21,6 +21,8 @@
     [self.dataArray addObject:@{@"title": @"测试2",        @"class": @"LearnGLTest2ViewController"}];
     [self.dataArray addObject:@{@"title": @"测试3:画板",    @"class": @"LearnGLTest3ViewController"}];
     [self.dataArray addObject:@{@"title": @"测试3_1:画板",  @"class": @"LearnGLTest31ViewController"}];
+    [self.dataArray addObject:@{@"title": @"测试360",      @"class": @"Test360GLViewController"}];
+    
     
 }
 
