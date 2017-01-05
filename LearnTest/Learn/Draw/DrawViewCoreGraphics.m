@@ -11,7 +11,44 @@
 @implementation DrawViewCoreGraphics
 {
     CGContextRef context;
+    
+    UIBezierPath *_path;
     NSMutableArray *touchPoints;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        CAShapeLayer *layer = (CAShapeLayer *)(self.layer);
+        layer.lineWidth = 5;
+        layer.lineCap = @"round";
+        layer.strokeColor = [UIColor redColor].CGColor;
+        layer.fillColor   = [UIColor clearColor].CGColor;
+        _path = [UIBezierPath bezierPath];
+        touchPoints = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        CAShapeLayer *layer = (CAShapeLayer *)(self.layer);
+        layer.lineWidth = 5;
+        layer.lineCap = @"round";
+        layer.strokeColor = [UIColor redColor].CGColor;
+        layer.fillColor   = [UIColor clearColor].CGColor;
+        _path = [UIBezierPath bezierPath];
+        touchPoints = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
++ (Class)layerClass
+{
+    return [CAShapeLayer class];
 }
 
 // Only override drawRect: if you perform custom drawing.
@@ -280,26 +317,30 @@
     CGContextSetRGBStrokeColor(context, 1, 0, 0, 1);
     CGContextSetLineWidth(context, 10);
     CGContextSetLineCap(context, kCGLineCapRound);
+    CGPoint preP = [touchPoints.firstObject CGPointValue];
     for (id rawPoint in touchPoints)
     {
         CGPoint p = [rawPoint CGPointValue];
-        CGContextMoveToPoint(context, p.x, p.y);
+        CGContextMoveToPoint(context, preP.x, preP.y);
         CGContextAddLineToPoint(context, p.x, p.y);
         CGContextStrokePath(context);
+        preP = p;
     }
+//    [_path stroke];
 }
 
 #pragma mark - touch events
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    touchPoints = [NSMutableArray array];
     for (UITouch *t in touches)
     {
         // 获取该touch的point
         CGPoint p = [t locationInView:self];
         [touchPoints addObject:[NSValue valueWithCGPoint:p]];
-        [self setNeedsDisplay];
+        [_path moveToPoint:p];
+        [_path addLineToPoint:p];
+        [self dealPoint];
     }
 }
 
@@ -309,59 +350,26 @@
     {
         CGPoint p = [t locationInView:self];
         [touchPoints addObject:[NSValue valueWithCGPoint:p]];
-        [self setNeedsDisplay];
+        [_path addLineToPoint:p];
+        [self dealPoint];
     }
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self setNeedsDisplay];
+    [self dealPoint];
 }
 
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-    [self setNeedsDisplay];
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self dealPoint];
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- (void)dealPoint
+{
+    ((CAShapeLayer *)self.layer).path = _path.CGPath;
+//    [self setNeedsDisplay];
+}
 
 @end
