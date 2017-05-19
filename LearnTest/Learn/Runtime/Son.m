@@ -21,6 +21,7 @@
     self = [super init];
     if (self)
     {
+        //http://www.cocoachina.com/ios/20141224/10740.html
         NSLog(@"%@", NSStringFromClass([self class])); // 输出：Son
         NSLog(@"%@", NSStringFromClass([super class])); // 输出：Son
         BOOL res1 = [[NSObject class] isKindOfClass:[NSObject class]];

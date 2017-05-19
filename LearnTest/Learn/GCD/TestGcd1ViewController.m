@@ -29,6 +29,34 @@ static dispatch_queue_t _addressBookQueue;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self test2];
+}
+
+- (void)test2
+{
+    [self performSelector:@selector(doTest2) withObject:nil afterDelay:3];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+       [self performSelector:@selector(cancelTest2) withObject:nil afterDelay:2];
+       [[NSRunLoop currentRunLoop] run];
+    });
+}
+
+- (void)doTest2
+{
+    NSLog(@"======doTest2======");
+}
+
+- (void)cancelTest2
+{
+    NSLog(@"======cancelTest2======");
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        [[self class] cancelPreviousPerformRequestsWithTarget:self selector:@selector(doTest2) object:nil];
+    });
+}
+
+
+- (void)test1
+{
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveNotification) name:[self testGcdNotificationName] object:nil];
     
     [self setupContactsData];
@@ -38,7 +66,6 @@ static dispatch_queue_t _addressBookQueue;
 {
     return @"testGcdNotificationName";
 }
-
 
 - (void)setupContactsData
 {

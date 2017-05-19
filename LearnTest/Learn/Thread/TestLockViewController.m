@@ -28,17 +28,19 @@
     conditionLock = [[NSConditionLock alloc] initWithCondition:1];
     condition     = [[NSCondition alloc] init];
     
-    NSThread *thread_1  = [[NSThread alloc] initWithTarget:self selector:@selector(doThread) object:nil];
-    thread_1.name = @"thread_1";
-    [thread_1 start];
+//    NSThread *thread_1  = [[NSThread alloc] initWithTarget:self selector:@selector(doThread) object:nil];
+//    thread_1.name = @"thread_1";
+//    [thread_1 start];
+//    
+//    NSThread *thread_2 = [[NSThread alloc] initWithTarget:self selector:@selector(doThread) object:nil];
+//    thread_2.name = @"thread_2";
+//    [thread_2 start];
+//    
+//    NSThread *thread_3 = [[NSThread alloc] initWithTarget:self selector:@selector(doThread7) object:nil];
+//    thread_3.name = @"thread_3";
+//    [thread_3 start];
     
-    NSThread *thread_2 = [[NSThread alloc] initWithTarget:self selector:@selector(doThread) object:nil];
-    thread_2.name = @"thread_2";
-    [thread_2 start];
-    
-    NSThread *thread_3 = [[NSThread alloc] initWithTarget:self selector:@selector(doThread7) object:nil];
-    thread_3.name = @"thread_3";
-    [thread_3 start];
+    [self runLock];
 }
 
 - (void)doThread

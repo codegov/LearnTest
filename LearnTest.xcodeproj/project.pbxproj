@@ -1326,7 +1326,8 @@
 				TargetAttributes = {
 					5155C68919F0AC6D002F4CC8 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = TU843SMT36;
+						DevelopmentTeam = 8G4JHEHBFG;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -1677,9 +1678,9 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = TU843SMT36;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 博 田 (99C3CTY7X4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 博 田 (99C3CTY7X4)";
+				DEVELOPMENT_TEAM = 8G4JHEHBFG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LearnTest/Learn-Prefix.pch";
 				IBC_FLATTEN_NIBS = YES;
@@ -1690,9 +1691,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LearnTest/Learn/Socket/src/ThirdPart/protobuf",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wenwen.D;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenwen.group;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ac4cf4e4-78c0-4045-a58b-889081458ac6";
+				PROVISIONING_PROFILE_SPECIFIER = WenWenDeveloper;
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/runtime/**";
 			};
 			name = Debug;
@@ -1703,9 +1705,9 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = TU843SMT36;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 博 田 (99C3CTY7X4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 博 田 (99C3CTY7X4)";
+				DEVELOPMENT_TEAM = 8G4JHEHBFG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LearnTest/Learn-Prefix.pch";
 				IBC_FLATTEN_NIBS = YES;
@@ -1716,9 +1718,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LearnTest/Learn/Socket/src/ThirdPart/protobuf",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wenwen.D;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenwen.group;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ac4cf4e4-78c0-4045-a58b-889081458ac6";
+				PROVISIONING_PROFILE_SPECIFIER = WenWenDeveloper;
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/runtime/**";
 			};
 			name = Release;
