@@ -165,6 +165,8 @@
 		8265FA9E1E0CCD1300ED9E17 /* Test31ShaderFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8265FA9C1E0CCD1300ED9E17 /* Test31ShaderFragment.glsl */; };
 		8265FA9F1E0CCD1300ED9E17 /* Test31ShaderVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8265FA9D1E0CCD1300ED9E17 /* Test31ShaderVertex.glsl */; };
 		8265FAA11E0D095800ED9E17 /* Radial.png in Resources */ = {isa = PBXBuildFile; fileRef = 8265FAA01E0D095800ED9E17 /* Radial.png */; };
+		82789DEB1EDFFBB200C970D0 /* PingImp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 82789DEA1EDFFBB200C970D0 /* PingImp.mm */; };
+		82789DF01EE0001000C970D0 /* Ping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82789DEE1EE0001000C970D0 /* Ping.cpp */; };
 		8280CD2C1E0A77B200816EE5 /* LearnGLTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8280CD211E0A77B200816EE5 /* LearnGLTest1ViewController.m */; };
 		8280CD2D1E0A77B200816EE5 /* LearnGLTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8280CD241E0A77B200816EE5 /* LearnGLTest2ViewController.m */; };
 		8280CD2E1E0A77B200816EE5 /* Test2ShaderFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8280CD251E0A77B200816EE5 /* Test2ShaderFragment.glsl */; };
@@ -481,6 +483,10 @@
 		8265FA9C1E0CCD1300ED9E17 /* Test31ShaderFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test31ShaderFragment.glsl; sourceTree = "<group>"; };
 		8265FA9D1E0CCD1300ED9E17 /* Test31ShaderVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test31ShaderVertex.glsl; sourceTree = "<group>"; };
 		8265FAA01E0D095800ED9E17 /* Radial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radial.png; sourceTree = "<group>"; };
+		82789DE91EDFFBB200C970D0 /* PingImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingImp.h; sourceTree = "<group>"; };
+		82789DEA1EDFFBB200C970D0 /* PingImp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PingImp.mm; sourceTree = "<group>"; };
+		82789DEE1EE0001000C970D0 /* Ping.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ping.cpp; sourceTree = "<group>"; };
+		82789DEF1EE0001000C970D0 /* Ping.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Ping.hpp; sourceTree = "<group>"; };
 		8280CD201E0A77B200816EE5 /* LearnGLTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnGLTest1ViewController.h; sourceTree = "<group>"; };
 		8280CD211E0A77B200816EE5 /* LearnGLTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnGLTest1ViewController.m; sourceTree = "<group>"; };
 		8280CD231E0A77B200816EE5 /* LearnGLTest2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnGLTest2ViewController.h; sourceTree = "<group>"; };
@@ -1013,6 +1019,10 @@
 			children = (
 				51A6765C1B1EE911009FF883 /* Tool */,
 				51ABC6B41B0987E400155BA0 /* IM */,
+				82789DE91EDFFBB200C970D0 /* PingImp.h */,
+				82789DEA1EDFFBB200C970D0 /* PingImp.mm */,
+				82789DEE1EE0001000C970D0 /* Ping.cpp */,
+				82789DEF1EE0001000C970D0 /* Ping.hpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -1449,6 +1459,7 @@
 				51A676BB1B1EE946009FF883 /* IMRequestURL.m in Sources */,
 				5197CAAD1B0047D000293D38 /* BlueYaTest1ViewController.m in Sources */,
 				5149FA5919FA217C00326054 /* BuyTicketViewController.m in Sources */,
+				82789DEB1EDFFBB200C970D0 /* PingImp.mm in Sources */,
 				51A438091A08FAC200A13229 /* SoftBaseRootViewController.m in Sources */,
 				82E7873A1D6447D50095D5B6 /* BSTRBTree.m in Sources */,
 				51B0C91A1B01E50400A0B524 /* Util.m in Sources */,
@@ -1553,6 +1564,7 @@
 				5113CB401A5BC0CF002E0B2C /* HashFunB.m in Sources */,
 				51ABC69D1B0982C100155BA0 /* SocketRootViewController.m in Sources */,
 				51A676CF1B1EE946009FF883 /* IMHeaderParam.m in Sources */,
+				82789DF01EE0001000C970D0 /* Ping.cpp in Sources */,
 				513FBC2219FA243F005E9EB6 /* TestBlock1ViewController.m in Sources */,
 				51A676CB1B1EE946009FF883 /* IMGroupMember.m in Sources */,
 				51A676D41B1EE946009FF883 /* IMLoginTask.m in Sources */,

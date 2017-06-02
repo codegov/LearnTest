@@ -7,6 +7,7 @@
 //
 
 #import "SocketRootViewController.h"
+#import "PingImp.h"
 
 @interface SocketRootViewController ()
 
@@ -29,6 +30,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [PingImp ping];
 }
 
 - (void)didReceiveMemoryWarning {
