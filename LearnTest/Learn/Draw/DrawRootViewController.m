@@ -26,17 +26,17 @@
 //    DrawView *view = [[DrawView alloc] initWithFrame:CGRectMake(0.0, 64.0, self.view.frame.size.width, self.view.frame.size.height - 64.0)];
 //    view.backgroundColor = [UIColor grayColor];
 //    [self.view addSubview:view];
-//    
-//    DrawTestView *testView = [[DrawTestView alloc] initWithFrame:CGRectMake(10, 100, self.view.frame.size.width - 20, 200)];
-//    testView.backgroundColor = [UIColor blackColor];
-//    [self.view addSubview:testView];
+//
+    DrawTestView *testView = [[DrawTestView alloc] initWithFrame:CGRectMake(10, 100, self.view.frame.size.width - 20, 200)];
+    testView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:testView];
     
 //    DrawCAShapeLayer *view = [[DrawCAShapeLayer alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)];
 //    [self.view addSubview:view];
     
-    DrawViewCoreGraphics *view = [[DrawViewCoreGraphics alloc] initWithFrame:CGRectMake(10.0, 74.0, self.view.frame.size.width - 20, self.view.frame.size.height - 84.0)];
-    view.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:view];
+   // DrawViewCoreGraphics *view = [[DrawViewCoreGraphics alloc] initWithFrame:CGRectMake(10.0, 74.0, self.view.frame.size.width - 20, self.view.frame.size.height - 84.0)];
+    //view.backgroundColor = [UIColor lightGrayColor];
+    //[self.view addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning {
